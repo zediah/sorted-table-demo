@@ -1,0 +1,52 @@
+@import 'colours';
+
+* {
+    box-sizing: border-box;
+}
+
+textarea {
+    border: 1px solid @grey5;
+    border-radius: 4px;
+    resize: none;
+    width: 100%;
+    color: @black;
+    padding: 16px;
+    transition: border-color .3s, color .3s;
+    will-change: border-color, color;
+    width: 100%;
+
+    &::placeholder {
+        color: @grey2;
+    }
+
+    &:hover, &:focus {
+        border-color: @secondary;
+        outline: none;
+    }
+
+    &.error {
+        border-color: @error;
+        color: @error;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        background-color: @grey7;
+        color: @grey5;
+    }
+}
+
+svg {
+    height: 20px;
+    width: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: @primary;
+    font-weight: bold;
+    transition: color 0.2s;
+    &:hover, &:focus {
+        color: darken(@primary, 10%);
+    }
+}

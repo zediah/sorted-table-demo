@@ -1,0 +1,71 @@
+.flex {
+  display: flex;
+}
+.flex.flex-columns {
+  flex-direction: columns;
+}
+.flex.justify-end {
+  justify-content: flex-end;
+}
+.flex.justify-center {
+  justify-content: center;
+}
+.flex.justify-between {
+  justify-content: space-between;
+}
+.flex.align-end {
+  align-items: flex-end;
+}
+.flex.align-center {
+  align-items: center;
+}
+.link-text {
+  text-decoration: none;
+  color: #01A4B7;
+  font-weight: bold;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.link-text:hover,
+.link-text:focus {
+  color: #017784;
+}
+.pointer-cursor {
+  cursor: pointer;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.error-colour {
+  color: #df0e42;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.push-right {
+  margin-right: 16px;
+}
+.push-left {
+  margin-left: 16px;
+}
+.spaced-children > :not(:last-child) {
+  margin-right: 16px;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.hidden {
+  display: none;
+}
+.success-colour {
+  color: #48B400;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: 600;
+}

@@ -1,0 +1,16 @@
+.table-header {
+  text-align: left;
+  border-bottom: 1px solid #E3E8ED;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2B4B5A;
+}
+.table-header th {
+  padding: 24px 12px 24px 0;
+}
+.table-header th:first-child {
+  padding-left: 24px;
+}
+.table-header th:last-child {
+  padding-right: 24px;
+}

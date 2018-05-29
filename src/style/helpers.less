@@ -1,0 +1,88 @@
+@import "colours";
+
+.flex {
+    display: flex;
+    &.flex-columns {
+        flex-direction: columns;
+    }
+    &.justify-end {
+        justify-content: flex-end;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.justify-between {
+        justify-content: space-between;
+    }
+    &.align-end {
+        align-items: flex-end;
+    }
+    &.align-center {
+        align-items: center;
+    }
+}
+
+.link-text {
+    text-decoration: none;
+    color: @primary;
+    font-weight: bold;
+    transition: color 0.2s;
+    cursor: pointer;
+    &:hover, &:focus {
+        color: darken(@primary, 10%);
+    }
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.error-colour {
+    color: @error;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.push-right {
+    margin-right: 16px;
+}
+
+.push-left {
+    margin-left: 16px;
+}
+
+.spaced-children {
+    >:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.success-colour {
+    color: @success;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 600;
+}

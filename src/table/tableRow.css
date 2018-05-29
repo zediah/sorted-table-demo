@@ -1,0 +1,19 @@
+.table-row {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+.table-row td {
+  padding: 24px 12px 24px 0;
+}
+.table-row td:first-child {
+  padding-left: 24px;
+}
+.table-row td:last-child {
+  padding-right: 24px;
+}
+.table-row:not(:last-child) {
+  border-bottom: 1px solid #E3E8ED;
+}
+.table-row:hover {
+  background-color: #F5F7F8;
+}
