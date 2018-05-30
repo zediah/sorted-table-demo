@@ -1,3 +1,11 @@
+## Sorted Table Demo
+
+This is a Demo created to show the implementation of a simple sorted table. This demo also shows off the full 'flux' flow utilising redux and how to ensure minimal re-renders through selector techniques.
+
+Below is the create-react-app spcheal.
+
+___________________________________________________________________________________________________
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
