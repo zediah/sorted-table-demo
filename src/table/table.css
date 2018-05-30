@@ -3,3 +3,6 @@
   border-collapse: collapse;
   border-top: 1px solid #E3E8ED;
 }
+.table.dark {
+  border-top: 1px solid white;
+}

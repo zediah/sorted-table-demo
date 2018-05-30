@@ -12,6 +12,13 @@ export function updateSortField(field) {
     }
 }
 
+export function updateTheme(darkTheme) {
+    return {
+        type: ActionTypes.UPDATE_THEME,
+        darkTheme,
+    };
+}
+
 export function loadList() {
     return (dispatch, getState) => {
         dispatch({ type: ActionTypes.LOAD_LIST });

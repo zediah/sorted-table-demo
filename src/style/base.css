@@ -42,3 +42,60 @@ a:hover,
 a:focus {
   color: #017784;
 }
+.button-group {
+  margin: 16px 0;
+}
+.button-group button:not(:last-child) {
+  margin-right: 24px;
+}
+button {
+  height: 48px;
+  border-radius: 50px;
+  appearance: none;
+  transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+  padding: 0 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 168px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+button:focus {
+  outline: none;
+}
+button.primary {
+  background-color: #01A4B7;
+  color: white;
+}
+button.primary:hover:not(:disabled),
+button.primary:focus,
+button.primary.active {
+  background-color: #017784;
+}
+button.secondary {
+  background-color: white;
+  border: 1px solid #01A4B7;
+  color: #01A4B7;
+}
+button.secondary:hover:not(:disabled),
+button.secondary:focus,
+button.secondary.active {
+  background-color: #01A4B7;
+  color: white;
+}
+button.naked {
+  color: #01A4B7;
+  background: transparent;
+}
+button.naked:hover:not(:disabled),
+button.naked:focus,
+button.naked.active {
+  color: #008EC8;
+}
+button:disabled {
+  cursor: not-allowed;
+}

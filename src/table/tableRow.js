@@ -4,15 +4,19 @@ import cn from 'classnames';
 import './tableRow.css'
 
 interface Props {
-
+    dark?: boolean;
 };
 
 export default function TableRow(props: Props) {
-    const { className, children } = props;
+    const { className, children, dark, ...rest } = props;
     return (
-        <tr {...props} className={cn(className, 'table-row')}>
+        <tr {...rest} className={cn(className, 'table-row', { dark })}>
             {React.Children.map(children, (child, index) => {
-                return <td key={index}>{child}</td>
+                if (child.type === 'td') {
+                    return child;
+                } else {
+                    return <td key={index}>{child}</td>
+                }
             })}
         </tr>
     );

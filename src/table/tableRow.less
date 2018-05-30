@@ -18,4 +18,16 @@
     &:hover {
         background-color: @grey7;
     }
+
+    &.dark {
+        background-color: @black;
+        color: white;
+        &:not(:last-child) {
+            border-bottom: 1px solid white;
+        }
+        &:hover {
+            background-color: @grey1;
+        }
+    }
+    
 }

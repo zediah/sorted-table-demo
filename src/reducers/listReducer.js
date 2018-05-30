@@ -6,6 +6,7 @@ const initialState = {
     error: undefined,
     sortField: undefined,
     sortDirection: undefined,
+    darkTheme: false,
 };
 
 export default function ListReducer(state = initialState, action) {
@@ -34,8 +35,12 @@ export default function ListReducer(state = initialState, action) {
                 sortField: action.field,
                 sortDirection: action.direction,
             };
+        case Actions.UPDATE_THEME:
+            return {
+                ...state,
+                darkTheme: action.darkTheme,
+            };
         default:
             return state;
-        break;
     }
 }

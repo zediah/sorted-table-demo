@@ -17,3 +17,13 @@
 .table-row:hover {
   background-color: #F5F7F8;
 }
+.table-row.dark {
+  background-color: #051E2A;
+  color: white;
+}
+.table-row.dark:not(:last-child) {
+  border-bottom: 1px solid white;
+}
+.table-row.dark:hover {
+  background-color: #2B4B5A;
+}
